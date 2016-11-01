@@ -20,5 +20,11 @@ module.exports = {
   resolve: {
     // 告诉webpack所有模块的启始目录由当前目录开始，再执行下webpack就可以正常输出了：
     modulesDirectories: ['.']
-  }
+  },
+  devServer: {
+    historyApiFallback: true,
+    hot: false,
+    inline: true,
+    progress: true
+  },
 }
