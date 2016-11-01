@@ -1,0 +1,29 @@
+{
+  "name": "learnwebpack",
+  "version": "1.0.0",
+  "description": "learn webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "start": "webpack-dev-server --content-base src/",
+    "delete:js": "rm -rf src/assets/",
+    "copy:js" : "cp -r src/assets/ src/assets2/",
+    "delete": "npm run clean:js && rm -rf src/assets2/",
+    "clean": "rm -rf src/assets/*",
+    "prehehe" : "echo 我会在hehe执行前打印出来",
+    "hehe": "node src/scripts/hehe.js",
+    "posthehe" : "echo 我会在hehe执行后打印出来",
+    "version" : "echo $npm_package_version",
+    "webpack:n" : "webpack --no-color",
+    "webpack:y" : "webpack"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
